@@ -1,0 +1,59 @@
+{
+  "name": "semennejo/submarine",
+  "description": "A server software for Minecraft: Bedrock Edition written in PHP",
+  "type": "project",
+  "homepage": "https://vk.com/vk.snikers",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "SEMENNEJO",
+      "email": "semennejo@hypego.org"
+    }
+  ],
+  "require": {
+    "php": "8.3",
+    "php-64bit": "*",
+    "daverandom/callback-validator": "dev-master",
+    "adhocore/json-comment" : "1.2.1",
+    "webmozart/assert": "1.11.0",
+    "webmozart/path-util": "2.3.0",
+    "margusk/accessors": "0.4.0",
+    "ext-zlib": "*",
+    "ext-bcmath": "*",
+    "ext-curl": "*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "1.11.2",
+    "phpstan/phpstan-phpunit": "^1.1.0",
+    "phpstan/phpstan-strict-rules": "^1.2.0",
+    "phpunit/phpunit": "^10.5.24"
+  },
+  "autoload": {
+    "psr-4": {
+      "": ["src", "src/log", "src/raklib"]
+    },
+    "files": [
+      "src/pocketmine/CoreConstants.php",
+      "src/pocketmine/GlobalConstants.php",
+      "src/pocketmine/VersionInfo.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "pocketmine\\": "tests/phpunit/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "8.3.0"
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "make-devtools": "@php -dphar.readonly=0 tests/plugins/DevTools/src/DevTools/ConsoleScript.php --make tests/plugins/DevTools --out plugins/DevTools.phar",
+    "make-server": [
+      "@composer install --no-dev --classmap-authoritative --ignore-platform-reqs",
+      "@php -dphar.readonly=0 build/server-phar.php"
+    ]
+  }
+}

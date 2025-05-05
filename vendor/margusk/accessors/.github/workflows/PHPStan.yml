@@ -1,0 +1,16 @@
+name: PHPStan
+
+on: [push]
+
+jobs:
+  phpstan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Composer install
+        run: composer install -n
+
+      - name: PHPStan Static Analysis
+        run: vendor/bin/phpstan analyse src/ tests/ -l 9

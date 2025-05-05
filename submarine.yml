@@ -1,0 +1,39 @@
+# Advanced configuration file for AquaMine
+player:
+  chat:
+    clean-color: true
+  replace-gap-nickname: false
+
+inventory:
+  allow-cheats: false
+    
+port-range:
+  enabled: false
+  start: 19132
+  end: 19164
+
+network:
+  packet-limit: 300
+  port-checking: true
+  raknet-validator: true
+
+server:
+  disable-logging: false
+  readonly-properties: false
+  folder-plugin-loader: true
+  #DO NOT USE ON PRODUCTION
+  fast-boot: true
+
+level-settings:
+  force-void: false
+
+level:
+  #Set if weather is enabled (rain may cause lag to older devices)
+  weather: true
+  #Weather random duration
+  weather-random-duration-min: 6000
+  weather-random-duration-max: 12000
+  #Random lightning interval，default as 10s, 0 = disable
+  lightning-time: 200
+  #Set if lightning strikes have fire afterwards
+  lightning-fire: false

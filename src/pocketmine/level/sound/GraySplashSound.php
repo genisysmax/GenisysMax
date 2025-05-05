@@ -1,0 +1,40 @@
+<?php
+
+/*
+ *
+ *    _____            _               __  __            
+ *   / ____|          (_)             |  \/  |           
+ *  | |  __  ___ _ __  _ ___ _   _ ___| \  / | __ ___  __
+ *  | | |_ |/ _ \ '_ \| / __| | | / __| |\/| |/ _` \ \/ /
+ *  | |__| |  __/ | | | \__ \ |_| \__ \ |  | | (_| |>  < 
+ *   \_____|\___|_| |_|_|___/\__, |___/_|  |_|\__,_/_/\_\
+ *                            __/ |                      
+ *                           |___/                       
+ *
+ * This program is licensed under the GPLv3 license.
+ * You are free to modify and redistribute it under the same license.
+ *
+ * @author LINUXOV
+ * @link vk.com/linuxof
+ *
+*/
+
+
+
+namespace pocketmine\level\sound;
+
+use pocketmine\math\Vector3;
+use pocketmine\network\mcpe\protocol\LevelEventPacket;
+
+class GraySplashSound extends GenericSound{
+	/**
+	 * GraySplashSound constructor.
+	 *
+	 * @param Vector3 $pos
+	 * @param int $pitch
+	 */
+	public function __construct(Vector3 $pos, $pitch = 0){
+		parent::__construct($pos, LevelEventPacket::EVENT_CAULDRON_TAKE_WATER, $pitch);
+	}
+}
+

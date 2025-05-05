@@ -9,7 +9,7 @@
 
 **GenisysMax** — открытое ядро для Minecraft PE серверов, основанное на форке Submarine и MiSoft, вдохновлённое архитектурой GenisysPro. Это полностью переработанное ядро с упором на стабильность, производительность и совместимость.
 
-![GenisysMax Logo](https://raw.githubusercontent.com/genisysmax/genisysmax.github.io/logo.jpg)
+![GenisysMax Logo](https://raw.githubusercontent.com/genisysmax/genisysmax.github.io/main/logo.jpg)
 
 ## ✨ Ключевые особенности
 

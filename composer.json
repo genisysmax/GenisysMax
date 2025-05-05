@@ -1,13 +1,13 @@
 {
-  "name": "semennejo/submarine",
+  "name": "genisysmax/GenisysMax",
   "description": "A server software for Minecraft: Bedrock Edition written in PHP",
   "type": "project",
-  "homepage": "https://vk.com/vk.snikers",
+  "homepage": "https://vk.com/linuxof",
   "minimum-stability": "stable",
   "authors": [
     {
-      "name": "SEMENNEJO",
-      "email": "semennejo@hypego.org"
+      "name": "LINUXOV",
+      "email": "linuxov97@gmail.com"
     }
   ],
   "require": {
